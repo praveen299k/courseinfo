@@ -1,16 +1,73 @@
-# React + Vite
+# CourseInfo – React Basics Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application built as part of a learning assignment to understand
+core React concepts such as components, props, lists, and basic data handling.
 
-Currently, two official plugins are available:
+This project started as a single component and was gradually refactored into
+multiple reusable components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## What This Project Does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Displays multiple courses
+- Each course contains multiple parts
+- Each part shows its name and number of exercises
+- Calculates and displays the total number of exercises per course
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Concepts Learned & Practiced
+
+- Creating and structuring React components
+- Passing data using props
+- Splitting a large component into smaller reusable components
+- Rendering lists using the `map` function
+- Calculating derived data using `reduce`
+- Keeping data in a parent component and passing it down
+- Basic project structure using Vite + React
+- Using Git & GitHub with meaningful commits
+
+---
+
+## Component Structure
+
+- **App**
+  - Holds all course data
+  - Renders courses using `map`
+- **Course**
+  - Represents a single course
+- **Header**
+  - Displays course name
+- **Content**
+  - Renders all parts of a course
+- **Part**
+  - Displays a single part and its exercises
+- **Total**
+  - Calculates and displays total exercises
+
+---
+
+## Tech Stack
+
+- React
+- JavaScript (ES6+)
+
+---
+
+## Purpose of This Project
+
+This is a learning-focused project created to build strong fundamentals in React.
+The goal was not UI design, but understanding **component-based thinking** and
+**data flow in React applications**.
+
+This project may be extended further as learning continues.
+
+---
+
+## How to Run Locally
+
+```bash
+npm install
+npm run dev
+```
